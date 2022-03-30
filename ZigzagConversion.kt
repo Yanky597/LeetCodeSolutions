@@ -15,7 +15,7 @@ class Solution {
             myWordList[counter] += s[i].toString();
             
             if(counter % (numRows-1) == 0 && i != 0){
-                directionAcending = if(directionAcending) false else true
+                directionAcending = !directionAcending
             }
             
             if(directionAcending){
