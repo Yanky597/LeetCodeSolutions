@@ -31,7 +31,7 @@ class Solution {
         Queue<Integer> sortedQueue = new PriorityQueue<Integer>();
         ListNode head = null;
         
-        ListNode currentNode = new ListNode();
+        ListNode currentNode = null;
         for(int i = 0; i < lists.length; i++){
             currentNode = lists[i]; 
             while(currentNode != null){
