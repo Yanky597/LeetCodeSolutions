@@ -10,6 +10,7 @@
  */
 class Solution {
     
+    
     /*
         Algorithm:        
             1.iterate through the list node array
@@ -25,7 +26,6 @@ class Solution {
             - ListNode currentNode -> to maintain a pointer to the current node
     
     */
-  
     public ListNode mergeKLists(ListNode[] lists) {
         
         Queue<Integer> sortedQueue = new PriorityQueue<Integer>();
@@ -43,12 +43,13 @@ class Solution {
         if(!sortedQueue.isEmpty()){
             head = new ListNode(sortedQueue.remove());
             currentNode = head;
-        }
-        
-        while(!sortedQueue.isEmpty()){
+            
+            while(!sortedQueue.isEmpty()){
             currentNode.next = new ListNode(sortedQueue.remove());
             currentNode = currentNode.next;
+            }
         }
+        
         
         return head;  
     }
