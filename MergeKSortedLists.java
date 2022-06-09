@@ -45,8 +45,8 @@ class Solution {
             currentNode = head;
             
             while(!sortedQueue.isEmpty()){
-            currentNode.next = new ListNode(sortedQueue.remove());
-            currentNode = currentNode.next;
+                currentNode.next = new ListNode(sortedQueue.remove());
+                currentNode = currentNode.next;
             }
         }
         
